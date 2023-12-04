@@ -1,0 +1,53 @@
+.cuerpo {
+  align-items: center;
+  background-color: #1e1f29;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100vh;
+  justify-content: center;
+}
+
+.titulo {
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
+.calculadora {
+  border: solid #b586ff 0.5rem;
+  border-radius: 1rem;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  padding: 0.5rem;
+}
+
+.cal-header {
+  color: whitesmoke;
+  grid-column: 1 / -1;
+  height: 1rem;
+  padding: 1rem;
+  text-align: end;
+  width: 20rem;
+}
+
+button {
+  background-color: #42e67b;
+  border-radius: 5px;
+  color: black;
+  font-size: 1rem;
+}
+
+.cal-cancelar {
+  grid-column: 1 / 3;
+}
+
+.cal-igual {
+  grid-column: 4;
+  grid-row: 5 / 7;
+}
+
+.cal-cero {
+  grid-column: 1 / 3;
+}
